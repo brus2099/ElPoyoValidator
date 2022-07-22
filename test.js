@@ -1,5 +1,7 @@
+const username = document.querySelector('#username');
 const save = document.getElementById('save');
 
-save.addEventListener('click', () => {
-  alert('69')
+save.addEventListener('click', (e) => {
+  e.preventDefault();
+  console.log(username.value);
 });
