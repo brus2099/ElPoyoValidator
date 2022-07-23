@@ -17,8 +17,12 @@ header {
   align-items: center;
 }
 
-header img {
+#just-logo {
   width: 60px;
+}
+
+#poyo-logo {
+  display: none;
 }
 
 .links {
@@ -36,7 +40,8 @@ header img {
   transition: 0.1s color, 0.1s border;
 }
 
-.links a:hover, .links a:active {
+.links a:hover,
+.links a:active {
   color: #FFAA00;
   border-bottom: 2px solid #003165;
 }
@@ -57,13 +62,8 @@ header img {
   margin: 20px;
 }
 
-/* Provisional size */
 .content img {
   width: 60%;
-}
-
-#poyo-logo {
-  display: none;
 }
 
 .form {
@@ -103,7 +103,8 @@ header img {
   transition: 0.1s all;
 }
 
-.form label:hover, .form input:focus .form label {
+.form label:hover,
+.form input:focus .form label {
   display: block;
   color: #003165;
   font-size: 16px;
@@ -131,7 +132,8 @@ header img {
   transition: 0.2s all;
 }
 
-.buttons button:hover, .butons button:active {
+.buttons button:hover,
+.butons button:active {
   background: #003165;
   color: #FFAA00;
 }
@@ -144,6 +146,25 @@ header img {
     margin: auto;
     display: flex;
     flex-direction: row;
+  }
+
+  #just-logo {
+    display: none;
+  }
+
+  #poyo-logo {
+    display: block;
+    height: 60px;
+  }
+
+  header {
+    max-width: 80vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .links {
+    width: 34vw;
   }
 
   .form {
